@@ -1,6 +1,8 @@
 import React from 'react';
 import './footer.scss';
-import { FaInstagram, FaCircle } from 'react-icons/fa'; // Example icons
+import socImg1 from "../../images/social-img-1.svg"
+import socImg2 from "../../images/social-img-2.svg"
+import socImg3 from "../../images/social-img-3.svg"
 
 const Footer = () => {
   return (
@@ -9,13 +11,15 @@ const Footer = () => {
         <h3>Connect With Us</h3>
         <div className="footer-icons">
           <a href="#" aria-label="Instagram">
-            <FaInstagram />
+            <img src={socImg1} alt='socImg1'/>
           </a>
-          {/* <a href="#" aria-label="X (formerly Twitter)">
-            <FaXTwitter />
-          </a> */}
+          <a href="#" aria-label="X (formerly Twitter)">
+          <img src={socImg2} alt='socImg1'/>
+
+          </a>
           <a href="#" aria-label="Another Platform">
-            <FaCircle />
+          <img src={socImg3} alt='socImg1'/>
+
           </a>
         </div>
       </div>
@@ -25,6 +29,7 @@ const Footer = () => {
         <a href="#">Community</a>
         <a href="#">FAQ</a>
       </div>
+      <div className='footer-line'/>
       <div className="footer-bottom">
         <p>© Affect Change</p>
       </div>

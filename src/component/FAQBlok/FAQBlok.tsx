@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import logo from "../../images/faq-animation-img-1.svg"
+
 import './FAQBlok.scss';
 
 const FAQBlok = () => {
@@ -25,9 +27,13 @@ const FAQBlok = () => {
 
   return (
     <section className="faq-section">
-    <div className='anumation-blok'>
-      
-    </div>
+      <div className='anumation-blok'>
+        <img src={logo} alt='' />
+        <img src={logo} alt='' />
+        <img src={logo} alt='' />
+        <img src={logo} alt='' />
+
+      </div>
       <h2>FAQ</h2>
       <div className="faq-list">
         {faqs.map((faq, index) => (

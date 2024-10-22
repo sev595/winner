@@ -1,0 +1,25 @@
+.animation-item-container {
+    display: flex;
+    flex-direction: column; // Stack the image and text vertically
+    align-items: center; // Center content horizontally (optional)
+    width: 80%; // Ensure the container takes full width
+
+    img {
+        width: 100%; // Image will take up the full width of the container
+        height: auto; // Maintain aspect ratio
+        object-fit: cover; // Ensures the image covers the available space
+    }
+
+    p {
+        width: 100%;
+        max-width: 648px; // Paragraph will also take up the full width of the container
+        text-align: center; // Center the text (optional)
+        padding: 10px;
+        font-family: Akzidenz-Grotesk Pro;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 45px;
+        text-align: left;
+        // Add some padding to give space between text and container borders
+    }
+}

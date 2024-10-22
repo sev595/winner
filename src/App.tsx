@@ -16,7 +16,7 @@ function App() {
       <VideoBlok />
       <section className='global-content'>
         <FilmsBlok />
-        {/* <StoryBlok/> */}
+        <StoryBlok/>
         <FounderBlok />
         <FoundingMembers/>
         <MembersBenefits/>

@@ -9,6 +9,41 @@
     background-size: cover;
     background-position: center;
     
+    .anumation-blok {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; // Align images to the left
+      overflow: hidden; // Hide overflow to simulate scrolling
+      white-space: nowrap; // Prevent line breaks between images
+      position: relative; // Ensure correct positioning for animation
+    
+      img {
+        width: 100px; // Adjust the size as needed
+        height: auto;
+        margin-right: 20px; // Space between images
+      }
+    
+      // Animation to scroll horizontally
+      @keyframes scrollHorizontal {
+        0% {
+          transform: translateX(0); // Start at the initial position
+        }
+        100% {
+          transform: translateX(-100%); // Move to the end (left)
+        }
+      }
+    
+      // Apply the animation
+      &:hover {
+        animation-play-state: paused; // Pause on hover for better user experience
+      }
+    
+      animation: scrollHorizontal 15s linear infinite; // Continuous scroll with 15s duration
+    }
+    
+    // This will loop the images for an infinite scroll effect
+    
+
     h2 {
       font-size: 2.5rem;
       font-weight: bold;

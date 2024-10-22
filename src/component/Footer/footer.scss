@@ -1,20 +1,24 @@
 .footer-section {
-    background-color: #6b4acc; // Main purple background color
+    // background-color: #6b4acc; // Main purple background color
+    background: rgba(97, 65, 228, 1);
     padding: 2rem 5rem;
     color: #fff;
-    text-align: center;
+    // text-align: center;
     
     @media (max-width: 768px) {
       padding: 2rem;
     }
   
     .footer-top {
-      background-color: rgba(255, 255, 255, 0.1); // Light purple box for Connect With Us
+      background: rgba(122, 91, 253, 1);
+
+      // background-color: rgba(255, 255, 255, 0.1); // Light purple box for Connect With Us
       padding: 2rem;
       border-radius: 15px;
       margin-bottom: 2rem;
   
       h3 {
+        text-align: center;
         font-size: 1.8rem;
         font-weight: 600;
         margin-bottom: 1rem;
@@ -39,7 +43,7 @@
   
     .footer-menu {
       display: flex;
-      justify-content: center;
+      justify-content: start;
       gap: 3rem;
       margin-bottom: 2rem;
   
@@ -55,14 +59,18 @@
       }
   
       @media (max-width: 768px) {
-        flex-direction: column;
+        // flex-direction: column;
         gap: 1rem;
       }
     }
   
+    .footer-line{
+      border: 1px solid rgba(122, 94, 237, 1)
+    }
     .footer-bottom {
       font-size: 1rem;
       opacity: 0.7;
+      text-align: center;
     }
   }
   
