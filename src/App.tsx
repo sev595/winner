@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { VideoBlok } from './component/videoBlok/VideoBlok';
+import FilmsBlok from './component/filmsBlok/FilmsBlok';
+import StoryBlok from './component/storyBlok/storyBlok';
+import FounderBlok from './component/founderBlok/FounderBlok';
+import FoundingMembers from './component/foundiingMembers/FoundingMembers';
+import MembersBenefits from './component/membersBenefits/MembersBenefits';
+import FAQBlok from './component/FAQBlok/FAQBlok';
+import ContactUs from './component/contactUs/ContactUs';
+import Footer from './component/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <VideoBlok />
+      <section className='global-content'>
+        <FilmsBlok />
+        {/* <StoryBlok/> */}
+        <FounderBlok />
+        <FoundingMembers/>
+        <MembersBenefits/>
+        <FAQBlok/>
+        <ContactUs/>
+        <Footer/>
+      </section>
+
     </div>
   );
 }

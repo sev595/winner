@@ -1,0 +1,47 @@
+.founding-memebers-blok-container {
+    min-height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/founder-background.svg'); // Use absolute path, omit 'public'
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+
+}
+
+.founding-memebers-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(97, 65, 228, 1);
+    border-radius: 60px;
+    padding: 30px 20px;
+
+}
+
+.founding-blok-info {
+    text-align: center;
+    max-width: 850px;
+    h1 {
+        color: rgba(230, 241, 104, 1);
+        font-family: Akzidenz-Grotesk Pro;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 71.34px;
+        text-align: center;
+
+    }
+
+    p {
+        font-family: Akzidenz-Grotesk Pro;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 42.47px;
+        letter-spacing: -0.05em;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+
+    }
+}

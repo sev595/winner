@@ -1,0 +1,103 @@
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    background-image: url('/images/contact_bg.jpg'); // Replace with the actual path to the background image
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 2rem;
+      text-align: center;
+    }
+  
+    .contact-left {
+      flex: 1;
+      padding-right: 2rem;
+  
+      h4 {
+        font-family: 'Playfair Display', serif; // Elegant serif font matching the style
+        font-size: 1.6rem;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 0.5rem;
+        font-style: italic;
+      }
+  
+      h2 {
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #ffffff; // White text for contrast on background
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); // Add subtle shadow for readability
+        margin-bottom: 1rem;
+      }
+  
+      @media (max-width: 768px) {
+        padding-right: 0;
+        h2 {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  
+    .contact-right {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.9); // Transparent white background for form
+      border-radius: 12px;
+      padding: 2.5rem;
+      max-width: 450px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        color: #333;
+      }
+  
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+  
+        input {
+          font-size: 1rem;
+          padding: 0.75rem 1rem;
+          margin-bottom: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          outline: none;
+          transition: border-color 0.3s;
+  
+          &:focus {
+            border-color: #6b4acc;
+          }
+        }
+  
+        button {
+          background-color: #6b4acc;
+          color: #fff;
+          padding: 0.75rem;
+          font-size: 1.1rem;
+          font-weight: 600;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: #5a3ab1; // Darker purple on hover
+          }
+        }
+      }
+  
+      @media (max-width: 768px) {
+        padding: 2rem;
+        max-width: 100%;
+      }
+    }
+  }
+  

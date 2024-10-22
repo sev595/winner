@@ -1,0 +1,60 @@
+.founder-blok-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/founder-background.svg'); // Use absolute path, omit 'public'
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: black;
+
+}
+
+.films-blok-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    max-width: 80%;
+    width: 100%;
+    border-radius: 60px;
+    padding: 30px 30px;
+    gap: 30px;
+}
+
+
+.films-blok-info {
+    h1 {
+        font-family: Akzidenz-Grotesk Pro;
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 38.73px;
+        text-align: left;
+
+    }
+
+    h2 {
+        font-family: Nunito Sans;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+
+    }
+
+    p {
+        font-family: Akzidenz-Grotesk Pro;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 39.6px;
+        text-align: left;
+
+    }
+
+}
+
+.films-blok-icon {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}

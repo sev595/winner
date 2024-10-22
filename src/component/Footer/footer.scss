@@ -1,0 +1,68 @@
+.footer-section {
+    background-color: #6b4acc; // Main purple background color
+    padding: 2rem 5rem;
+    color: #fff;
+    text-align: center;
+    
+    @media (max-width: 768px) {
+      padding: 2rem;
+    }
+  
+    .footer-top {
+      background-color: rgba(255, 255, 255, 0.1); // Light purple box for Connect With Us
+      padding: 2rem;
+      border-radius: 15px;
+      margin-bottom: 2rem;
+  
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+  
+      .footer-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+  
+        a {
+          color: #fff;
+          font-size: 1.8rem;
+          transition: color 0.3s;
+  
+          &:hover {
+            color: #ffdd57; // Hover effect, yellowish color for icons
+          }
+        }
+      }
+    }
+  
+    .footer-menu {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin-bottom: 2rem;
+  
+      a {
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: 500;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: #ffdd57; // Hover effect for the menu links
+        }
+      }
+  
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  
+    .footer-bottom {
+      font-size: 1rem;
+      opacity: 0.7;
+    }
+  }
+  
