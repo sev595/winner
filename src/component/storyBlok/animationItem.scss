@@ -22,4 +22,29 @@
         text-align: left;
         // Add some padding to give space between text and container borders
     }
+
+    .story-gif-container {
+        position: relative;
+        height: 100vh;
+
+        .story-gif-pic-container {
+            position: absolute;
+            left: 0;
+            z-index: 1;
+    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 85%);
+
+            .story-gif-pic {
+                left: 0;
+
+            }
+        }
+
+        .story-gif-back {
+            position: absolute;
+            z-index: 0;
+        }
+
+    }
+
+
 }

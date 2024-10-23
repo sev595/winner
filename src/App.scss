@@ -2,15 +2,23 @@ body {
   padding: 0;
   margin: 0;
 }
-section{
-  height:100vh
+
+section {
+  min-height: 100vh
 }
-.global-content{
+
+.global-content {
   margin-top: 100vh;
   position: relative;
   z-index: 2;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -18,3 +26,29 @@ a {
   text-decoration: none !important;
 }
 
+// /* Import Restora Font */
+// @font-face {
+//   font-family: 'Restora';
+//   src: url('./fonts/AkzidenzGroteskPro-Bold.eot') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+/* Import Akzidenz-Grotesk Pro Font */
+// @font-face {
+//   font-family: 'AkzidenzGroteskPro';
+//   src: url('./fonts/AkzidenzGroteskPro-Bold.woff') format('woff');
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
+/* Apply the fonts to your project */
+body {
+  font-family: 'Restora', sans-serif;
+  /* Example: Apply Restora globally */
+}
+
+h1 {
+  font-family: 'AkzidenzGroteskPro', sans-serif;
+  /* Example: Apply Akzidenz-Grotesk Pro to headings */
+}

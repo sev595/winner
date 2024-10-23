@@ -9,6 +9,7 @@ import MembersBenefits from './component/membersBenefits/MembersBenefits';
 import FAQBlok from './component/FAQBlok/FAQBlok';
 import ContactUs from './component/contactUs/ContactUs';
 import Footer from './component/Footer/Footer';
+import StartAnimation from './component/startAnimation/startAnimation';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
         <ContactUs/>
         <Footer/>
       </section>
-
+      <StartAnimation/>
     </div>
   );
 }

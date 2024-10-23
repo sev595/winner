@@ -1,0 +1,42 @@
+.start-animation-container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(11, 14, 1, 1);
+    z-index: 9999;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .start-animation-logo-content {
+        position: relative;
+        width: 170px;
+        height: 124px;
+
+        .letteral {
+            max-width: min-content;
+            position: absolute;
+            transform: translate(-50%, -50%) rotate(0deg);  // Initial state
+            transition: transform 3s ease-in-out; // Set the transition duration to 1s
+            
+        //     // Add custom transforms for each letter if needed
+        //     &.rotate {
+        //         transform: translate(-50%, -50%) rotate(90deg); // Rotate fully (360 degrees)
+        //     }
+        }
+
+        .start-animation-g {
+            left: 67px;
+        }
+
+        .start-animation-a {
+            top: 5px;
+        }
+    }
+    .start-animation-text-content{
+
+    }
+}

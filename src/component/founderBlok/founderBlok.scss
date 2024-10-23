@@ -18,6 +18,19 @@
     border-radius: 60px;
     padding: 30px 30px;
     gap: 30px;
+
+    .founder-blok-picture {
+      position: relative;
+
+      .founder-add-icon {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        max-width: min-content;
+          cursor: pointer;
+      }
+    }
+
   }
 
   .founder-blok-info {
@@ -53,7 +66,11 @@
     position: absolute;
     right: 30px;
     top: 30px;
+
+
   }
+
+
 }
 
 
@@ -64,15 +81,18 @@
       flex-direction: column;
       padding: 60px 0 20px 0;
 
-      .founder-blok-picture{
+      .founder-blok-picture {
         display: flex;
         align-items: center;
         justify-content: center;
-        img{
+        position: relative;
+
+        img {
           width: 80%;
           height: auto;
         }
       }
+
       .founder-blok-info {
         width: 80%;
 
@@ -95,8 +115,9 @@
           line-height: 17.8px;
         }
       }
-      .founder-blok-icon{
-        img{
+
+      .founder-blok-icon {
+        img {
           width: 45px;
           height: 33px;
         }

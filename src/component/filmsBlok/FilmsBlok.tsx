@@ -10,7 +10,7 @@ const FilmsBlok = () => {
           <img src={gif} alt='asd' />
         </div>
         <div className="films-blok-info">
-          <h1>Mammoth</h1>
+          <h1>MAMMONTH</h1>
           <h2>Film FESTIVAL AWARD WINNER!</h2>
           <p>Creating ripples of change in the world requires a united force, a community bound by a shared spirit. We’re more than just a television series; we’re a global movement built on co-creation and shared ownership.</p>
           <p>We empower our vibrant community and dedicated ambassadors to be active players in shaping the narrative. Together, we amplify the inspiring stories of individuals and organizations making a real difference, transforming the “affect” into a lasting, echoing “effect” that resonates for generations to come</p>

@@ -1,4 +1,4 @@
-import logo from "../../images/founding-members.svg"
+import logo from "../../images/Utilities.gif"
 import './foundingMembers.scss'
 
 const FoundingMembers = () => {
@@ -14,7 +14,7 @@ const FoundingMembers = () => {
           <img src={logo} alt='logo' />
         </div>
       </div>
-    </div>
+    </div> 
   )
 }
 
