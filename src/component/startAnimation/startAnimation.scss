@@ -1,42 +1,48 @@
 .start-animation-container {
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    background: rgba(11, 14, 1, 1);
-    z-index: 9999;
-    top: 0;
-    overflow: hidden;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(11, 14, 1, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+  top: 0;
+  overflow: hidden;
+
+  .start-animation-logo-content {
+    position: relative;
+    width: 170px;
+    height: 124px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
 
-    .start-animation-logo-content {
-        position: relative;
-        width: 170px;
-        height: 124px;
-
-        .letteral {
-            max-width: min-content;
-            position: absolute;
-            transform: translate(-50%, -50%) rotate(0deg);  // Initial state
-            transition: transform 3s ease-in-out; // Set the transition duration to 1s
-            
-        //     // Add custom transforms for each letter if needed
-        //     &.rotate {
-        //         transform: translate(-50%, -50%) rotate(90deg); // Rotate fully (360 degrees)
-        //     }
-        }
-
-        .start-animation-g {
-            left: 67px;
-        }
-
-        .start-animation-a {
-            top: 5px;
-        }
+    .letteral {
+      width: 100px;
+      height: auto;
+      position: absolute;
+      transform: translate(-50%, -50%) rotate(90deg); // Initial rotation state
     }
-    .start-animation-text-content{
-
+    .start-animation-g {
+        left: 67px;
     }
+
+    .start-animation-a {
+        top: 5px;
+        left: 0;
+    }
+  }
+
+  .start-animation-text-content {
+    margin-top: 20px;
+    overflow: hidden; // Hide the overflowing image until animation starts
+    width: 300px; // Ensure the container has the same width as the image
+    img {
+      width: 100%;
+      height: auto;
+      transform: scaleX(0); // Initially scale the image to 0 width
+      transform-origin: left; // Scale from the left to right
+    }
+  }
 }
