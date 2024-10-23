@@ -23,14 +23,16 @@ const StartAnimation = () => {
   
       // Zoom in effect for the images
       .to('.start-animation-logo-content', { scale: 100, duration: 1, ease: 'power2.out' }, 2.5)
-      .to('.start-animation-text-content', { scale: 1.2, duration: 1, ease: 'power2.out' }, 2.5)
+
+      
+      .to('.start-animation-text-content', {  opacity: 0, duration: 1, ease: 'power2.out' }, 2.5)
   
       // Fade out the whole component after zoom
       .to('.start-animation-container', { opacity: 0, duration: 1, ease: 'power2.out' }, 3.5);
   }, []);
   ;
 
-  // if (animationComplete) return null; // Remove the component after animation
+  if (animationComplete) return null; // Remove the component after animation
 
   return (
     <section className="start-animation-container">

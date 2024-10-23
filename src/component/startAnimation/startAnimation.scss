@@ -23,13 +23,17 @@
       height: auto;
       position: absolute;
       transform: translate(-50%, -50%) rotate(90deg); // Initial rotation state
+      img{
+        width: 160px;
+        height: auto;
+      }
     }
     .start-animation-g {
-        left: 67px;
+        left: 111px;
     }
 
     .start-animation-a {
-        top: 5px;
+        top: 10px;
         left: 0;
     }
   }
