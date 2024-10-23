@@ -1,15 +1,13 @@
 .founder-blok-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('/images/founder-background.svg'); // Use absolute path, omit 'public'
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/images/founder-background.svg'); // Use absolute path, omit 'public'
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
 
-}
-
-.films-blok-content {
+  .founder-blok-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,41 +18,91 @@
     border-radius: 60px;
     padding: 30px 30px;
     gap: 30px;
-}
+  }
 
-
-.films-blok-info {
+  .founder-blok-info {
     h1 {
-        font-family: Akzidenz-Grotesk Pro;
-        font-size: 30px;
-        font-weight: 900;
-        line-height: 38.73px;
-        text-align: left;
-
+      font-family: Akzidenz-Grotesk Pro;
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 38.73px;
+      text-align: left;
     }
 
     h2 {
-        font-family: Nunito Sans;
-        font-size: 28px;
-        font-weight: 400;
-        line-height: 22px;
-        text-align: left;
+      font-family: Nunito Sans;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
 
     }
 
     p {
-        font-family: Akzidenz-Grotesk Pro;
-        font-size: 36px;
-        font-weight: 400;
-        line-height: 39.6px;
-        text-align: left;
+      font-family: Akzidenz-Grotesk Pro;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 39.6px;
+      text-align: left;
 
     }
 
-}
+  }
 
-.films-blok-icon {
+  .founder-blok-icon {
     position: absolute;
     right: 30px;
     top: 30px;
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .founder-blok-container {
+
+    .founder-blok-content {
+      flex-direction: column;
+      padding: 60px 0 20px 0;
+
+      .founder-blok-picture{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          width: 80%;
+          height: auto;
+        }
+      }
+      .founder-blok-info {
+        width: 80%;
+
+        h1 {
+          font-size: 18px;
+          font-weight: 100;
+          line-height: 23.25px;
+
+        }
+
+        h2 {
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 6.88px;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 17.8px;
+        }
+      }
+      .founder-blok-icon{
+        img{
+          width: 45px;
+          height: 33px;
+        }
+      }
+    }
+
+  }
+
 }

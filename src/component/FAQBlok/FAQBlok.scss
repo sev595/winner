@@ -1,112 +1,80 @@
 .faq-section {
-    display: flex;
-    flex-direction: column;
-    background-color: #f4f4f9; // Light background color for the section
-    padding: 3rem;
-    text-align: center;
-    position: relative;
-    background-image: url('/images/member_benefit.jpg'); // Replace with the actual path to the background image
-    background-size: cover;
-    background-position: center;
-    
-    .anumation-blok {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start; // Align images to the left
-      overflow: hidden; // Hide overflow to simulate scrolling
-      white-space: nowrap; // Prevent line breaks between images
-      position: relative; // Ensure correct positioning for animation
-    
-      img {
-        width: 100px; // Adjust the size as needed
-        height: auto;
-        margin-right: 20px; // Space between images
-      }
-    
-      // Animation to scroll horizontally
-      @keyframes scrollHorizontal {
-        0% {
-          transform: translateX(0); // Start at the initial position
-        }
-        100% {
-          transform: translateX(-100%); // Move to the end (left)
-        }
-      }
-    
-      // Apply the animation
-      &:hover {
-        animation-play-state: paused; // Pause on hover for better user experience
-      }
-    
-      animation: scrollHorizontal 15s linear infinite; // Continuous scroll with 15s duration
-    }
-    
-    // This will loop the images for an infinite scroll effect
-    
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f9; // Light background color for the section
+  padding: 3rem;
+  text-align: center;
+  position: relative;
+  background-image: url('/images/faq-back.svg'); // Replace with the actual path to the background image
+  background-size: cover;
+  background-position: center;
 
-    h2 {
-      font-size: 2.5rem;
-      font-weight: bold;
-      margin-bottom: 2rem;
-      color: rgba(255, 255, 255, 1);
-    }
   
-    .faq-list {
-      max-width: 800px;
-      margin: 0 auto;
-  
-      .faq-item {
-        background-color: #ffffff;
-        border-radius: 8px;
-        margin-bottom: 1rem;
-        padding: 1.5rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        cursor: pointer;
-        transition: all 0.3s ease;
-  
-        &.open {
-          background-color: #e6e6f5;
-        }
-  
-        .faq-question {
-          font-size: 1.2rem;
-          font-weight: 600;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          color: #333;
-  
-          .faq-icon {
-            font-size: 1.5rem;
-            font-weight: bold;
-            transition: transform 0.3s ease;
-          }
-        }
-  
-        .faq-answer {
-          margin-top: 1rem;
-          font-size: 1rem;
-          color: #555;
+  // This will loop the images for an infinite scroll effect
+
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .faq-item {
+      background-color: #ffffff;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &.open {
+        background-color: #e6e6f5;
+      }
+
+      .faq-question {
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #333;
+
+        .faq-icon {
+          font-size: 1.5rem;
+          font-weight: bold;
+          transition: transform 0.3s ease;
         }
       }
-  
-      @media (max-width: 768px) {
-        .faq-item {
-          padding: 1rem;
+
+      .faq-answer {
+        margin-top: 1rem;
+        font-size: 1rem;
+        color: #555;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .faq-item {
+        padding: 1rem;
+      }
+
+      .faq-question {
+        font-size: 1.1rem;
+
+        .faq-icon {
+          font-size: 1.3rem;
         }
-  
-        .faq-question {
-          font-size: 1.1rem;
-  
-          .faq-icon {
-            font-size: 1.3rem;
-          }
-        }
-  
-        .faq-answer {
-          font-size: 0.9rem;
-        }
+      }
+
+      .faq-answer {
+        font-size: 0.9rem;
       }
     }
   }
-  
+}

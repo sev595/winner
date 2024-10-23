@@ -5,20 +5,20 @@ import logo from "../../images/quotes.png"
 const FounderBlok = () => {
   return (
     <section className="founder-blok-container">
-      <div className="films-blok-content">
-        <div className="films-blok-picture">
+      <div className="founder-blok-content">
+        <div className="founder-blok-picture">
           <img src={img} alt='asd' />
         </div>
-        <div className="films-blok-info">
+        <div className="founder-blok-info">
           <h1>Jason Neubauer</h1>
           <h2>Founder</h2>
           <p>Affect Change is a movement where ordinary sparks create extraordinary fire in each and everyone of us.</p>
         </div>
-        <div className="films-blok-icon">
+        <div className="founder-blok-icon">
           <img src={logo} alt='logo' />
         </div>
       </div>
     </section>
   )
 }
-export default FounderBlok
+export default FounderBlok  

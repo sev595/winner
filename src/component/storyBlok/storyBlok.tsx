@@ -18,7 +18,6 @@ const StoryBlok = () => {
       start: 'top top',
       end: "bottom bottom",
       pin: ".story-blok-container-background",
-      markers: true,
       scrub: true
     })
 

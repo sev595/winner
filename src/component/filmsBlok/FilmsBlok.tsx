@@ -7,7 +7,7 @@ const FilmsBlok = () => {
     <section className="films-blok-container">
       <div className="films-blok-content">
         <div className="films-blok-picture">
-          <img src={gif} alt='asd'/>
+          <img src={gif} alt='asd' />
         </div>
         <div className="films-blok-info">
           <h1>Mammoth</h1>
@@ -16,8 +16,7 @@ const FilmsBlok = () => {
           <p>We empower our vibrant community and dedicated ambassadors to be active players in shaping the narrative. Together, we amplify the inspiring stories of individuals and organizations making a real difference, transforming the “affect” into a lasting, echoing “effect” that resonates for generations to come</p>
         </div>
         <div className="films-blok-icon">
-        <img src={logo} alt='logo'/>
-
+          <img src={logo} alt='logo' />
         </div>
       </div>
     </section>

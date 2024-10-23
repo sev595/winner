@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from "../../images/faq-animation-img-1.svg"
 
 import './FAQBlok.scss';
+import FAQAnimationBlok from './FAQAnimationBlok';
 
 const FAQBlok = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -24,16 +25,10 @@ const FAQBlok = () => {
       answer: "The movement and community play a crucial role in fostering collaboration, sharing knowledge, and supporting initiatives for positive impact."
     }
   ];
-
+ 
   return (
-    <section className="faq-section">
-      <div className='anumation-blok'>
-        <img src={logo} alt='' />
-        <img src={logo} alt='' />
-        <img src={logo} alt='' />
-        <img src={logo} alt='' />
-
-      </div>
+    <div className="faq-section">
+      <FAQAnimationBlok/>
       <h2>FAQ</h2>
       <div className="faq-list">
         {faqs.map((faq, index) => (
@@ -49,7 +44,7 @@ const FAQBlok = () => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
