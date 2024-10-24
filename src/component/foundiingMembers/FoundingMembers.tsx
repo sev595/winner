@@ -3,8 +3,8 @@ import './foundingMembers.scss'
 
 const FoundingMembers = () => {
   return (
-    <div className="founding-memebers-blok-container">
-      <div className="founding-memebers-content">
+    <section className="founding-memebers-blok-container">
+      <div className="founding-memebers-content block-kontent">
         <div className="founding-blok-info">
           <h1>222 FOUNDING MEMBERS</h1>
           <p>Our private community includes conscious leaders, celebrities, influencers, and wellness experts who have undergone personal transformation and are committed to creating change</p>
@@ -14,7 +14,7 @@ const FoundingMembers = () => {
           <img src={logo} alt='logo' />
         </div>
       </div>
-    </div> 
+    </section> 
   )
 }
 

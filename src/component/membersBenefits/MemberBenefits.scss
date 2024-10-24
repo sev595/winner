@@ -1,13 +1,13 @@
 .member-benefits {
   position: relative;
-  background-image: url('/images/member_benefit.jpg'); // Replace with the actual path to the background image
-  background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  padding: 2rem;
+  background-image: url('/images/img3.png'); // Use absolute path, omit 'public'
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(99, 66, 231, 1);
 
   // Semi-transparent overlay for background
   .benefits-overlay {
@@ -31,8 +31,8 @@
     background-color: rgba(255, 255, 255, 0.85); // Slight transparency for contrast with the background
     padding: 2rem;
     border-radius: 10px;
-    max-width: 900px;
     width: 100%;
+    max-width: 80%;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
     /* Adjust the coordinates to get the desired curve */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -80,11 +80,41 @@
         }
       }
 
-      @media (max-width: 768px) {
-        .benefits-column {
-          flex: 1 1 100%; // Stack columns vertically on smaller screens
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .member-benefits{
+    .benefits-content{
+    padding: 1rem;
+
+      h2{
+        font-family: Akzidenz-Grotesk Pro;
+font-size: 30px;
+font-weight: 500;
+line-height: 45px;
+text-align: center;
+
+      }
+      .benefits-grid{
+        .benefits-column{
+
+          ul{
+            li{
+              font-family: Akzidenz-Grotesk Pro;
+font-size: 18px;
+font-weight: 500;
+line-height: 27px;
+text-align: left;
+
+            }
+          }
         }
       }
     }
+  }
+  .benefits-column {
+    flex: 1 1 100%; // Stack columns vertically on smaller screens
   }
 }

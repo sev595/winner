@@ -5,26 +5,31 @@ import { useEffect } from "react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import AnimationItem from "./AnimationItem"
+import { useBreakpoint } from "../../hook/useBreakpoint"
 
 gsap.registerPlugin(ScrollTrigger)
 
 
 const StoryBlok = () => {
 
-  useEffect(() => {
-    // gsap.to(".story-blok-container", {
-    ScrollTrigger.create({
-      trigger: ".story-blok-container",
-      start: 'top top',
-      end: "bottom bottom",
-      pin: ".story-blok-container-background",
-      scrub: true
-    })
+  const { screenWidth, breakpoint } = useBreakpoint();
 
+  useEffect(() => {
+    if (screenWidth >= 1400) {
+      ScrollTrigger.create({
+        trigger: ".story-blok-container",
+        start: 'top top',
+        end: "bottom bottom",
+        pin: ".story-blok-container-background",
+        scrub: true
+      })
+    }
   }, [])
+
 
   return (
     <section className="story-blok-container" >
+
       {/* <div className="story-blok-container-background">
         <img src={background} alt="asxd" />
       </div> */}
@@ -33,7 +38,7 @@ const StoryBlok = () => {
         <p>Tired of self-serving content? So are we. That's why we, as conscious entrepreneurs, launched Affect Change—to use influence for real, lasting impact. We don't believe in 'overnight success.' At Affect Change, we celebrate the journey and how collaboration leads to success.</p>
       </div>
       <div className="story-blok-galary">
-        <AnimationItem/>
+        <AnimationItem />
       </div>
     </section>
   )

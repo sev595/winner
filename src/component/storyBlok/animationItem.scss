@@ -3,6 +3,7 @@
     flex-direction: column; // Stack the image and text vertically
     align-items: center; // Center content horizontally (optional)
     width: 80%; // Ensure the container takes full width
+    margin-left: 230px;
 
     img {
         width: 100%; // Image will take up the full width of the container
@@ -31,7 +32,7 @@
             position: absolute;
             left: 0;
             z-index: 1;
-    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 85%);
+            clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 85%);
 
             .story-gif-pic {
                 left: 0;

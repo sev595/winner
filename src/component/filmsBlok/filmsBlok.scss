@@ -1,8 +1,11 @@
 .films-blok-container {
-  background-color: rgba(99, 66, 231, 1);
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url('/images/img1.png'); // Use absolute path, omit 'public'
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(99, 66, 231, 1);
 
   .films-blok-content {
     display: flex;
@@ -10,10 +13,11 @@
     justify-content: center;
     justify-content: space-between;
     border-radius: 60px;
-    background: rgba(122, 91, 253, 1);
+    background: rgba(255, 255, 255, 0.5);
     padding: 20px 30px;
     max-width: 80%;
     position: relative;
+
   }
 
   .films-blok-picture {
@@ -30,7 +34,7 @@
 
   .films-blok-info {
     width: 40%;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(15, 17, 21, 1);
 
     h1 {
       font-family: Restora;

@@ -11,10 +11,8 @@ const GifItem = () => {
       <div className="story-gif-container" >
         <div className="story-gif-pic-container">
         <img className="story-gif-pic" src={storyGif} alt="asxd" />
-
         </div>
         <img className="story-gif-back" src={storyGifBack} alt="asxd" />
-
         <p>Sasha Calle’s journey shines bright. Empowered by Affect Change, she became Lola Rosales on 'The Young and the Restless,' earned a Daytime Emmy nomination, and is now set to soar as Supergirl in 'The Flash</p>
       </div>
 
@@ -27,13 +25,11 @@ const AnimationItem = () => {
     <div className="animation-item-container">
       <div>
         <img src={storyImage1} alt="asxd" />
-        <p>Sasha Calle’s journey shines bright. Empowered by Affect Change, she became Lola Rosales on 'The Young and the Restless,' earned a Daytime Emmy nomination, and is now set to soar as Supergirl in 'The Flash</p>
+        <p>Take Johnny 'Dr. Whitout' Joassaint. After our pilot transformed his life, his business and certifications soared, making him Miami’s top luxury car detailer, trusted by celebrities and A-listers.</p>
       </div>
       <GifItem />
-
       <div>
         <img src={storyImage3} alt="asxd" />
-        <p>Sasha Calle’s journey shines bright. Empowered by Affect Change, she became Lola Rosales on 'The Young and the Restless,' earned a Daytime Emmy nomination, and is now set to soar as Supergirl in 'The Flash</p>
       </div>
 
     </div>

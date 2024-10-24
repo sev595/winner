@@ -27,10 +27,12 @@ const FAQBlok = () => {
   ];
  
   return (
-    <div className="faq-section">
+    <section className="faq-section">
+      <div className='block-kontent'>
+
       <FAQAnimationBlok/>
       <h2>FAQ</h2>
-      <div className="faq-list">
+      <div className="faq-list ">
         {faqs.map((faq, index) => (
           <div
             key={index}
@@ -44,7 +46,9 @@ const FAQBlok = () => {
           </div>
         ))}
       </div>
-    </div>
+      </div>
+
+    </section>
   );
 };
 

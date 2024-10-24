@@ -1,12 +1,11 @@
 import './startAnimation.scss';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import startAnimationA from "../../images/start-animation-A.svg";
 import startAnimationB from "../../images/start-animation-g.svg";
 import startAnimationText from "../../images/start-animation-text.svg";
 
 const StartAnimation = () => {
-  const [animationComplete, setAnimationComplete] = useState(false);
 
   useEffect(() => {
     const timeline = gsap.timeline({
@@ -32,7 +31,6 @@ const StartAnimation = () => {
   }, []);
   ;
 
-  if (animationComplete) return null; // Remove the component after animation
 
   return (
     <section className="start-animation-container">

@@ -1,19 +1,18 @@
 .contact-section {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 2rem 5rem;
-  background-image: url('/images/contact_bg.jpg'); // Replace with the actual path to the background image
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
+  justify-content: center;
   position: relative;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    padding: 2rem;
-    text-align: center;
+  background-image: url('/images/img6.png'); // Use absolute path, omit 'public'
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(99, 66, 231, 1);
+  .contact-us-section-content{
+    display: flex;
+    align-items: center;
+    max-width: 90%;
   }
+
 
   .contact-left {
     flex: 1;
@@ -109,6 +108,34 @@
     @media (max-width: 768px) {
       padding: 2rem;
       max-width: 100%;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .contact-us-section-content{
+      align-items: center;
+      flex-direction: column;
+      max-width: 90%;
+    }
+    .contact-left{
+      margin-bottom: 40px;
+      h4{
+        font-family: Restora;
+        font-size: 25px;
+        font-style: italic;
+        font-weight: 100;
+        line-height: 31.62px;
+        text-align: left;
+        
+      }
+      h2{
+        font-family: Akzidenz-Grotesk Pro;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 29.4px;
+        text-align: left;
+        
+      }
     }
   }
 }

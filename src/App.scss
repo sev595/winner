@@ -4,13 +4,14 @@ body {
 }
 
 section {
-  min-height: 100vh
+  padding: 200px 0;
 }
 
 .global-content {
   margin-top: 100vh;
   position: relative;
   z-index: 2;
+  padding: 0;
 }
 
 h1,
@@ -51,4 +52,11 @@ body {
 h1 {
   font-family: 'AkzidenzGroteskPro', sans-serif;
   /* Example: Apply Akzidenz-Grotesk Pro to headings */
+}
+
+@media (max-width: 1400px) {
+  .block-kontent {
+    max-width: 90%;
+    width: 100%;
+  }
 }

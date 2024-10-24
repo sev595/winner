@@ -5,7 +5,7 @@ import logo from "../../images/company_tag.png"
 const FilmsBlok = () => {
   return (
     <section className="films-blok-container">
-      <div className="films-blok-content">
+      <div className="films-blok-content block-kontent">
         <div className="films-blok-picture">
           <img src={gif} alt='asd' />
         </div>

@@ -12,7 +12,7 @@ const FounderBlok = () => {
   
   return (
     <section className="founder-blok-container">
-      <div className="founder-blok-content">
+      <div className="founder-blok-content block-kontent">
         <div className="founder-blok-picture">
           <div className='founder-add-icon' onClick={()=>{setIsOpenModal(true)}}>
             <img src={founderAddIcon} alt=''/>

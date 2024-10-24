@@ -3,10 +3,11 @@ import './MemberBenefits.scss';
 
 const MemberBenefits = () => {
   return (
-    <div className="member-benefits">
+    <section className="member-benefits">
+
       <div className="benefits-overlay"></div>
       
-      <div className="benefits-content">
+      <div className="benefits-content block-kontent">
         <h2>MEMBER BENEFITS</h2>
         <div className="benefits-grid">
           <div className="benefits-column">
@@ -26,7 +27,7 @@ const MemberBenefits = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
