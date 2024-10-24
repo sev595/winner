@@ -1,46 +1,66 @@
     .story-blok-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        height: 400vh;
-        position: relative;
-        background-image: url('/images/our-story-bg.png'); // Use absolute path, omit 'public'
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed; // This keeps the background fixed during scrolling
-        // background-color: black;
-        background-color: #6342E7;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      height: 400vh;
+      position: relative;
+      background-image: url('/images/our-story-bg.png'); // Use absolute path, omit 'public'
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed; // This keeps the background fixed during scrolling
+      // background-color: black;
+      background-color: #6342E7;
 
-        .story-blok-container-background {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
+      .story-blok-container-background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      .story-blok-info {
+        // flex: 1;
+        padding: 20px;
+        position: sticky;
+        transform: translate(0, 0) !important;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 2rem;
+        z-index: 4;
+        left: 0;
+        max-width: 420px;
+        color: rgba(255, 255, 255, 1);
+
+      }
+
+      .story-blok-galary {
+        display: flex;
+        flex-direction: column;
+        // flex: 1;
+        gap: 30px;
+
+      }
+    }
+
+    @media (max-width: 1440px) {
+      .story-blok-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
 
         .story-blok-info {
-            // flex: 1;
-            padding: 20px;
-            position: sticky;
-            transform: translate(0, 0) !important;
-            top: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            font-size: 2rem;
-            z-index: 4;
-            left: 0;
-            max-width: 420px;
-            color: rgba(255, 255, 255, 1);
+          position: unset;
+          height: auto;
 
         }
 
         .story-blok-galary {
-            display: flex;
-            flex-direction: column;
-            // flex: 1;
-            gap: 30px;
-
+          display: flex;
+          gap: 0;
+          align-items: center;
         }
+      }
     }

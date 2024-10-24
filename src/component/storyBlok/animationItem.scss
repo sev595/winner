@@ -5,6 +5,12 @@
     width: 80%; // Ensure the container takes full width
     margin-left: 230px;
 
+    .animation-item-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     img {
         width: 100%; // Image will take up the full width of the container
         height: auto; // Maintain aspect ratio
@@ -36,7 +42,6 @@
 
             .story-gif-pic {
                 left: 0;
-
             }
         }
 
@@ -44,8 +49,12 @@
             position: absolute;
             z-index: 0;
         }
-
     }
+}
 
-
+@media (max-width: 1440px) {
+    .animation-item-container {
+        margin: 0;
+        width: 90%;
+    }
 }

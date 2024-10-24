@@ -23,12 +23,12 @@ const GifItem = () => {
 const AnimationItem = () => {
   return (
     <div className="animation-item-container">
-      <div>
+      <div className="animation-item-content">
         <img src={storyImage1} alt="asxd" />
         <p>Take Johnny 'Dr. Whitout' Joassaint. After our pilot transformed his life, his business and certifications soared, making him Miami’s top luxury car detailer, trusted by celebrities and A-listers.</p>
       </div>
       <GifItem />
-      <div>
+      <div className="animation-item-content">
         <img src={storyImage3} alt="asxd" />
       </div>
 

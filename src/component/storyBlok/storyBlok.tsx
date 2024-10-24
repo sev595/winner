@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const StoryBlok = () => {
 
-  const { screenWidth, breakpoint } = useBreakpoint();
+  const { screenWidth } = useBreakpoint();
 
   useEffect(() => {
     if (screenWidth >= 1400) {
@@ -24,12 +24,11 @@ const StoryBlok = () => {
         scrub: true
       })
     }
-  }, [])
+  }, [screenWidth])
 
 
   return (
     <section className="story-blok-container" >
-
       {/* <div className="story-blok-container-background">
         <img src={background} alt="asxd" />
       </div> */}

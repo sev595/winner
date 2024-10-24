@@ -4,14 +4,12 @@ import './MemberBenefits.scss';
 const MemberBenefits = () => {
   return (
     <section className="member-benefits">
-
       <div className="benefits-overlay"></div>
-      
       <div className="benefits-content block-kontent">
         <h2>MEMBER BENEFITS</h2>
         <div className="benefits-grid">
           <div className="benefits-column">
-            <ul> 
+            <ul>
               <li>Access to all 222 members for co-collaboration</li>
               <li>Your name in the TV series credits</li>
               <li>Exclusive perks for entire Affect Change TV series</li>

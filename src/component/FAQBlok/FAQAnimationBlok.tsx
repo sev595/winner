@@ -24,6 +24,21 @@ const FAQAnimationBlok = () => {
           <div className="item">
             <img src={logo1} alt="Logo 1" />
           </div>
+          <div className="item">
+            <img src={logo} alt="Logo" />
+          </div>
+          <div className="item">
+            <img src={logo1} alt="Logo 1" />
+          </div>
+          <div className="item">
+            <img src={logo2} alt="Logo 2" />
+          </div>
+          <div className="item">
+            <img src={logo3} alt="Logo 3" />
+          </div>
+          <div className="item">
+            <img src={logo1} alt="Logo 1" />
+          </div>
         </div>
       </div>
     </div>

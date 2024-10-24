@@ -9,6 +9,11 @@
   background-size: cover;
   background-color: rgba(99, 66, 231, 1);
 
+
+  perspective: 1000px;
+  /* Adds 3D perspective */
+
+
   // Semi-transparent overlay for background
   .benefits-overlay {
     position: absolute;
@@ -33,14 +38,16 @@
     border-radius: 10px;
     width: 100%;
     max-width: 80%;
-    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    // clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
     /* Adjust the coordinates to get the desired curve */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     /* Optional shadow */
     background: rgba(255, 255, 255, 0.4);
     min-height: 865px;
-    overflow: hidden; /* Ensure content is clipped within the border */
+    overflow: hidden;
+    /* Ensure content is clipped within the border */
     border-radius: 60px;
+
 
 
     h2 {
@@ -61,7 +68,8 @@
         min-width: 250px; // Ensure a reasonable width even on small screens
 
         ul {
-          list-style-type: disc; /* Adds bullet points */
+          list-style-type: disc;
+          /* Adds bullet points */
           padding: 0;
 
           li {
@@ -85,28 +93,27 @@
 }
 
 @media (max-width: 1440px) {
-  .member-benefits{
-    .benefits-content{
-    padding: 1rem;
+  .member-benefits {
+    .benefits-content {
+      padding: 1rem;
 
-      h2{
-        font-family: Akzidenz-Grotesk Pro;
-font-size: 30px;
-font-weight: 500;
-line-height: 45px;
-text-align: center;
+      h2 {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 45px;
+        text-align: center;
 
       }
-      .benefits-grid{
-        .benefits-column{
 
-          ul{
-            li{
-              font-family: Akzidenz-Grotesk Pro;
-font-size: 18px;
-font-weight: 500;
-line-height: 27px;
-text-align: left;
+      .benefits-grid {
+        .benefits-column {
+
+          ul {
+            li {
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 27px;
+              text-align: left;
 
             }
           }
@@ -114,7 +121,46 @@ text-align: left;
       }
     }
   }
+
   .benefits-column {
     flex: 1 1 100%; // Stack columns vertically on smaller screens
   }
 }
+
+// .conainer {
+//   position: relative;
+//   width: 100%;
+//   overflow: hidden;
+//   height: 200px;
+
+//   .inner {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: calc(100% *2);
+//     display: flex;
+//     animation: carusel 10s linear infinite;
+//     transform: translateX(0);
+//     gap: 10px;
+
+//     .item {
+//     width: calc(100% /10);
+      
+//       flex: 1 1 auto;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       border: 1px solid red;
+//     }
+//   }
+// }
+
+// @keyframes carusel {
+//   0% {
+//     transform: translateX(-100%)
+//   }
+
+//   100% {
+//     transform: translateX(0)
+//   }
+// }
