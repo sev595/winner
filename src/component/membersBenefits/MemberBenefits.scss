@@ -35,7 +35,6 @@
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.85); // Slight transparency for contrast with the background
     padding: 2rem;
-    border-radius: 10px;
     width: 100%;
     max-width: 80%;
     // clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
@@ -47,8 +46,15 @@
     overflow: hidden;
     /* Ensure content is clipped within the border */
     border-radius: 60px;
+// steeee
+width: calc(100% + 38px);
+height: 100%;
+transform-origin: top left;
+transform: rotateY(-13deg) skewX(0deg) skewY(-6deg);
 
+    
 
+////////
 
     h2 {
       font-size: 2.5rem;
@@ -77,7 +83,6 @@
             line-height: 1.5;
             margin-bottom: 1rem;
             color: #333; // Dark text for readability
-            font-family: Akzidenz-Grotesk Pro;
             font-size: 32px;
             font-weight: 500;
             line-height: 48px;

@@ -43,16 +43,43 @@ a {
 //   font-style: normal;
 // }
 
+@font-face {
+  font-family: "Akzidenz";
+  src:
+    url("./font/AkzidenzGroteskPro-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Akzidenz-bold";
+  src:
+    url("./font/AkzidenzGroteskPro-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Restora";
+  src:
+    url("./font/RestoraExtraLight.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Restora-italic";
+  src:
+    url("./font/RestoraThinItalic.otf") format("otf");
+}
+
+
 /* Apply the fonts to your project */
 body {
-  font-family: 'Restora', sans-serif;
+  font-family: 'Akzidenz', sans-serif;
   /* Example: Apply Restora globally */
 }
 
-h1 {
-  font-family: 'AkzidenzGroteskPro', sans-serif;
-  /* Example: Apply Akzidenz-Grotesk Pro to headings */
+button{
+  border: none;
+  background: transparent;
+  outline: none;
 }
+
 
 @media (max-width: 1400px) {
   .block-kontent {

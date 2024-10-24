@@ -6,10 +6,9 @@ import startAnimationB from "../../images/start-animation-g.svg";
 import startAnimationText from "../../images/start-animation-text.svg";
 
 const StartAnimation = () => {
-
   useEffect(() => {
     const timeline = gsap.timeline({
-      // onComplete: () => setAnimationComplete(true), // Disable component after animation
+      // onCompletex: () => setAnimationComplete(true), // Disable component after animation
     });
   
     // Rotate animation for both letters
@@ -27,7 +26,7 @@ const StartAnimation = () => {
       .to('.start-animation-text-content', {  opacity: 0, duration: 1, ease: 'power2.out' }, 2.5)
   
       // Fade out the whole component after zoom
-      .to('.start-animation-container', { opacity: 0, duration: 1, ease: 'power2.out' }, 3.5);
+      .to('.start-animation-container', { opacity: 0,zIndex:-1, duration: 1, ease: 'power2.out' }, 3.5);
   }, []);
   ;
 
