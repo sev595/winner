@@ -8,16 +8,16 @@ import FounderBlokModal from './founderBlokModal'
 
 const FounderBlok = () => {
   const [isOpenModal, setIsOpenModal] = useState(false)
-  console.log(isOpenModal);
   
-  return (
+  return ( 
     <section className="founder-blok-container">
       <div className="founder-blok-content block-kontent">
         <div className="founder-blok-picture">
+          
           <div className='founder-add-icon' onClick={()=>{setIsOpenModal(true)}}>
             <img src={founderAddIcon} alt=''/>
           </div>
-          <img src={FounderImg} alt='asd' />
+          <img className='founder-blok-picture-back' src={FounderImg} alt='asd' />
         </div>
         <div className="founder-blok-info">
           <h1>Jason Neubauer</h1>

@@ -13,7 +13,7 @@ const FounderBlokModal = ({ isOpen, onClose }: IBioBodal) => {
   const handleOverlayClick = (e:any) => {
     if (e.target === e.currentTarget) {
       onClose();  // Close the modal if the click is on the overlay
-    }
+    } 
   };
   return (
     <div className="bio-modal-overlay" onClick={handleOverlayClick}>
@@ -21,7 +21,6 @@ const FounderBlokModal = ({ isOpen, onClose }: IBioBodal) => {
         <div className="close-button" onClick={() => { onClose(false) }}>
           <img src={closeButtonIcon} alt=''/>
         </div>
-
         <div className="bio-content">
           <div className="bio-image">
             <img
@@ -40,7 +39,6 @@ const FounderBlokModal = ({ isOpen, onClose }: IBioBodal) => {
             </a>
           </div>
           </div>
-
           <div className="bio-info">
             <h3>BIO</h3>
             <div className="bio-text">

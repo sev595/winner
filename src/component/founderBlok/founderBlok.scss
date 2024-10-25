@@ -11,7 +11,7 @@
   .founder-blok-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
     background: rgba(255, 255, 255, 0.5);
     max-width: 80%;
@@ -25,10 +25,17 @@
 
       .founder-add-icon {
         position: absolute;
+
         bottom: 30px;
         right: 30px;
+
         max-width: min-content;
-          cursor: pointer;
+        cursor: pointer;
+
+        img {
+          width: calc(2.6875rem + ((1vw - 3.29px) * 5.4005));
+          height: calc(2.6875rem + ((1vw - 3.29px) * 5.4005));
+        }
       }
     }
 
@@ -36,26 +43,23 @@
 
   .founder-blok-info {
     h1 {
-      font-size: 30px;
+      font-size: calc(1.125rem + ((1vw - 3.29px) * 1.0801));
+      line-height: calc(1.4375rem + ((1vw - 3.29px) * 1.3501));
       font-weight: 900;
-      line-height: 38.73px;
-      text-align: left;
     }
 
     h2 {
-      font-size: 28px;
+      font-size: calc(0.8125rem + ((1vw - 3.29px) * 1.3501));
+      line-height: calc(0.40625rem + ((1vw - 3.29px) * 1.3951));
       font-weight: 400;
-      line-height: 22px;
-      text-align: left;
 
     }
 
     p {
-      font-size: 36px;
+      font-size: calc(1rem + ((1vw - 3.29px) * 1.4401));
+      line-height: calc(1.0625rem + ((1vw - 3.29px) * 1.6202));
       font-weight: 400;
-      line-height: 39.6px;
-      text-align: left;
-
+      max-width: 519px;
     }
 
   }
@@ -79,13 +83,19 @@
       flex-direction: column;
       padding: 60px 0 20px 0;
 
+      .founder-add-icon {
+
+        bottom: 10px !important;
+        right: 77px !important;
+      }
+
       .founder-blok-picture {
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
 
-        img {
+        .founder-blok-picture-back {
           width: 80%;
           height: auto;
         }
@@ -99,32 +109,8 @@
         justify-content: center;
         align-items: center;
         width: 50%;
-        h1 {
-          font-size: 18px;
-          font-weight: 100;
-          line-height: 23.25px;
 
-        }
-
-        h2 {
-          font-size: 13px;
-          font-weight: 700;
-          line-height: 6.88px;
-        }
-
-        p {
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 17.8px;
-          text-align: center;
-        }
-      }
-
-      .founder-blok-icon {
-        img {
-          width: 45px;
-          height: 33px;
-        }
+        
       }
     }
 

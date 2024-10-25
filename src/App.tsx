@@ -25,7 +25,7 @@ function App() {
         <ContactUs/>
         <Footer/>
       </section>
-      <StartAnimation/>
+      {/* <StartAnimation/> */}
     </div>
   );
 }

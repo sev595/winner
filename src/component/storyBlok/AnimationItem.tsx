@@ -3,6 +3,13 @@ import storyGif from "../../images/Our-Story.gif"
 import storyGifBack from "../../images/our-story_mask-back.svg"
 
 import storyImage3 from "../../images/story-image-3.png"
+
+import test1 from "../../images/test11.png"
+import test2 from "../../images/test22.png"
+import test3 from "../../images/test33.png"
+
+
+
 import './animationItem.scss'
 
 const GifItem = () => {
@@ -24,12 +31,19 @@ const AnimationItem = () => {
   return (
     <div className="animation-item-container">
       <div className="animation-item-content">
-        <img src={storyImage1} alt="asxd" />
-        <p>Take Johnny 'Dr. Whitout' Joassaint. After our pilot transformed his life, his business and certifications soared, making him Miami’s top luxury car detailer, trusted by celebrities and A-listers.</p>
+        <img src={test1} alt="asxd" />
+        <p>1Take <span> Johnny 'Dr. Whitout' Joassaint. After our pilot transformed his life, </span> his business and certifications soared, making him Miami’s top luxury car detailer, trusted by celebrities and A-listers.</p>
       </div>
-      <GifItem />
+      {/* <GifItem /> */}
+
+
       <div className="animation-item-content">
-        <img src={storyImage3} alt="asxd" />
+        <img src={test2} alt="asxd" />
+        <p>Sasha Calle’s journey shines bright. Empowered by Affect Change, she became Lola Rosales on 'The Young and the Restless,' <span> earned a Daytime Emmy nomination, and is now set to soar as Supergirl in 'The Flash </span></p>
+
+      </div>
+      <div className="animation-item-content">
+        <img src={test3} alt="asxd" />
       </div>
 
     </div>

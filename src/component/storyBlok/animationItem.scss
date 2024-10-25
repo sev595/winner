@@ -3,34 +3,45 @@
     flex-direction: column; // Stack the image and text vertically
     align-items: center; // Center content horizontally (optional)
     width: 80%; // Ensure the container takes full width
-    margin-left: 230px;
+    // margin-left: 230px;
 
     .animation-item-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
 
-    img {
-        width: 100%; // Image will take up the full width of the container
-        height: auto; // Maintain aspect ratio
-        object-fit: cover; // Ensures the image covers the available space
-    }
 
-    p {
-        width: 100%;
-        max-width: 648px; // Paragraph will also take up the full width of the container
-        text-align: center; // Center the text (optional)
-        padding: 10px;
-        font-size: 30px;
-        font-weight: 500;
-        line-height: 45px;
-        text-align: left;
-        // Add some padding to give space between text and container borders
+        img {
+            width: 100%; // Image will take up the full width of the container
+            height: auto; // Maintain aspect ratio
+            object-fit: cover; // Ensures the image covers the available space
+        }
+
+        p {
+            width: 100%;
+            font-size: calc(1rem + ((1vw - 3.29px) * 1.2601));
+            font-weight: 500;
+            line-height: calc(1.4rem + ((1vw - 3.29px) * 2.0342));
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 1);
+
+
+        }
+
+        span {
+            color: rgba(207, 221, 47, 1);
+            text-transform: uppercase;
+
+
+
+        }
+
+
+
     }
 
     .story-gif-container {
-        position: relative;
+        // position: relative;
         height: 100vh;
 
         .story-gif-pic-container {
@@ -51,7 +62,7 @@
     }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1400px) {
     .animation-item-container {
         margin: 0;
         width: 90%;

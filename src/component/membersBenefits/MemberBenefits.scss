@@ -33,28 +33,30 @@
     justify-content: center;
     position: relative;
     z-index: 2;
-    background-color: rgba(255, 255, 255, 0.85); // Slight transparency for contrast with the background
+    // background-color: rgba(255, 255, 255, 0.85); // Slight transparency for contrast with the background
     padding: 2rem;
     width: 100%;
-    max-width: 80%;
+    // max-width: 80%;
     // clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
     /* Adjust the coordinates to get the desired curve */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     /* Optional shadow */
-    background: rgba(255, 255, 255, 0.4);
+    // background: rgba(255, 255, 255, 0.4);
     min-height: 865px;
     overflow: hidden;
     /* Ensure content is clipped within the border */
     border-radius: 60px;
-// steeee
-width: calc(100% + 38px);
-height: 100%;
-transform-origin: top left;
-transform: rotateY(-13deg) skewX(0deg) skewY(-6deg);
+    // steeee
+    // width: calc(100% + 38px);
+    // height: 100%;
+    // transform-origin: top left;
+    // transform: rotateY(-13deg) skewX(0deg) skewY(-6deg);
 
-    
-
-////////
+    background-image: url('/images/memBenContentBack.png'); // Use absolute path, omit 'public'
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 150px;
+    ////////
 
     h2 {
       font-size: 2.5rem;
@@ -97,7 +99,7 @@ transform: rotateY(-13deg) skewX(0deg) skewY(-6deg);
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1400px) {
   .member-benefits {
     .benefits-content {
       padding: 1rem;
@@ -150,7 +152,7 @@ transform: rotateY(-13deg) skewX(0deg) skewY(-6deg);
 
 //     .item {
 //     width: calc(100% /10);
-      
+
 //       flex: 1 1 auto;
 //       display: flex;
 //       align-items: center;
