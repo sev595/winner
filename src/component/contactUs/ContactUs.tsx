@@ -1,5 +1,6 @@
 import React from 'react';
 import './contactUs.scss';
+import Footer from '../Footer/Footer';
 
 const ContactUs = () => {
   return (
@@ -20,6 +21,7 @@ const ContactUs = () => {
           </form>
         </div>
       </div>
+      <Footer/>
 
     </section>
   );

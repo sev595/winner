@@ -78,13 +78,18 @@
 
         .story-blok-info {
           position: unset;
-          height: auto !important
+          height: auto !important;
+
+          max-width: 90% !important;
+          width: 100%;
         }
 
         .story-blok-galary {
           display: flex;
           gap: 0;
           align-items: center;
+          max-width: 90%;
+          width: 100%;
 
         h2 {
           font-size: 30px;

@@ -7,7 +7,7 @@ import socImg3 from "../../images/social-img-3.svg"
 const Footer = () => {
   return (
     <footer className="footer-section">
-      <div className="footer-top">
+      {/* <div className="footer-top">
         <h3>Connect With Us</h3>
         <div className="footer-icons">
           <a href="#" aria-label="Instagram">
@@ -22,7 +22,7 @@ const Footer = () => {
 
           </a>
         </div>
-      </div>
+      </div> */}
       <div className="footer-menu">
         <a href="#">Home</a>
         <a href="#">About</a>

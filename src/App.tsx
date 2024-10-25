@@ -23,9 +23,8 @@ function App() {
         <MembersBenefits/>
         <FAQBlok/>
         <ContactUs/>
-        <Footer/>
       </section>
-      {/* <StartAnimation/> */}
+      <StartAnimation/>
     </div>
   );
 }

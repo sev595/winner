@@ -9,12 +9,12 @@ export const VideoBlok = () => {
           // src= 'https://www.youtube.com/embed/rLVEcuwRAms?si=P1B8JtqoIFXVqO_D'
           />
       </div>
-      <div className="video-blok-anumation-content">
+      {/* <div className="video-blok-anumation-content">
         <h2 className="video-blok-anumation-content-text video-blok-anumation-content-1">Join <br />the movement  </h2>
         <h2 className="video-blok-anumation-content-text video-blok-anumation-content-2"> that <br/> empowers <br /> diverse voices</h2>
         <h2 className="video-blok-anumation-content-text video-blok-anumation-content-3">to inspire <br/> meaningful <br /> changes in others</h2>
         <button className="video-blok-anumation-content-button">Join us</button>
-      </div>
+      </div> */}
     </section>
   )
 }

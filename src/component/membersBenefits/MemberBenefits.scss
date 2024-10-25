@@ -17,7 +17,7 @@
   // Semi-transparent overlay for background
   .benefits-overlay {
     position: absolute;
-    top: 0;
+    top: 0; 
     left: 0;
     width: 100%;
     height: 100%;
@@ -33,37 +33,40 @@
     justify-content: center;
     position: relative;
     z-index: 2;
-    // background-color: rgba(255, 255, 255, 0.85); // Slight transparency for contrast with the background
     padding: 2rem;
+    min-height: 865px;
+    overflow: hidden;
+
+    background-image: url('/images/memBenContentBack.png'); // Use absolute path, omit 'public'
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    max-width: 90%;
     width: 100%;
+
     // max-width: 80%;
     // clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
     /* Adjust the coordinates to get the desired curve */
     // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     /* Optional shadow */
     // background: rgba(255, 255, 255, 0.4);
-    min-height: 865px;
-    overflow: hidden;
     /* Ensure content is clipped within the border */
-    border-radius: 60px;
     // steeee
     // width: calc(100% + 38px);
     // height: 100%;
     // transform-origin: top left;
     // transform: rotateY(-13deg) skewX(0deg) skewY(-6deg);
-
-    background-image: url('/images/memBenContentBack.png'); // Use absolute path, omit 'public'
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 150px;
     ////////
 
     h2 {
-      font-size: 2.5rem;
       font-weight: 700;
       color: #6b4acc; // Vibrant purple based on the design image
       margin-bottom: 1.5rem;
       text-align: center;
+
+      font-size: calc(1.875rem + ((1vw - 3.29px) * 2.3402));
+      line-height: calc(2.8125rem + ((1vw - 3.29px) * 3.6004));
+
     }
 
     .benefits-grid {
@@ -81,15 +84,16 @@
           padding: 0;
 
           li {
-            font-size: 1.2rem;
-            line-height: 1.5;
+            // font-size: 1.2rem;
             margin-bottom: 1rem;
             color: #333; // Dark text for readability
-            font-size: 32px;
             font-weight: 500;
-            line-height: 48px;
             text-align: left;
             color: rgba(15, 17, 21, 1);
+
+            font-size: calc(1.125rem + ((1vw - 3.29px) * 1.2601));
+            line-height: calc(1.6875rem + ((1vw - 3.29px) * 1.8902));
+
 
           }
         }
@@ -103,31 +107,10 @@
   .member-benefits {
     .benefits-content {
       padding: 1rem;
-
-      h2 {
-        font-size: 30px;
-        font-weight: 500;
-        line-height: 45px;
-        text-align: center;
-
-      }
-
-      .benefits-grid {
-        .benefits-column {
-
-          ul {
-            li {
-              font-size: 18px;
-              font-weight: 500;
-              line-height: 27px;
-              text-align: left;
-
-            }
-          }
-        }
+      width: 80% !important;
       }
     }
-  }
+  
 
   .benefits-column {
     flex: 1 1 100%; // Stack columns vertically on smaller screens
