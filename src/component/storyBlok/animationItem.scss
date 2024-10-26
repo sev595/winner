@@ -65,6 +65,10 @@
 @media (max-width: 1400px) {
     .animation-item-container {
         margin: 0;
-        width: 90%;
+        width: 100%;
+
+        .animation-item-content p {
+            margin-top: 100px;
+        }
     }
 }

@@ -1,0 +1,15 @@
+.layout-container {
+    position: fixed;
+    height: 40vh;
+    width: 343px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+  
+  }
+  

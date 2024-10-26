@@ -8,24 +8,32 @@ import FoundingMembers from './component/foundiingMembers/FoundingMembers';
 import MembersBenefits from './component/membersBenefits/MembersBenefits';
 import FAQBlok from './component/FAQBlok/FAQBlok';
 import ContactUs from './component/contactUs/ContactUs';
-import Footer from './component/Footer/Footer';
 import StartAnimation from './component/startAnimation/startAnimation';
+import Layout from './component/layout/layout';
+import Social from './Social/Social';
 
 function App() {
   return (
-    <div className="App">
-      <VideoBlok />
-      <section className='global-content'>
-        <FilmsBlok />
-        <StoryBlok/>
-        <FounderBlok />
-        <FoundingMembers/>
-        <MembersBenefits/>
-        <FAQBlok/>
-        <ContactUs/>
-      </section>
-      <StartAnimation/>
+    <div>
+
+      <div className="App">
+        <VideoBlok />
+        <section className='global-content'>
+          <FilmsBlok />
+          <StoryBlok />
+          <FounderBlok />
+          <FoundingMembers />
+          <MembersBenefits />
+          <FAQBlok />
+          <ContactUs />
+        </section>
+        <StartAnimation/>
+        <Layout/>
+        <Social/>
+        
+      </div>
     </div>
+
   );
 }
 

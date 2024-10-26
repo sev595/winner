@@ -73,7 +73,7 @@ h4 {
 }
 
 p {
-  font-size: calc(1rem + ((1vw - 3.29px) * 1.4401));
+  font-size: calc(1rem + ((1vw - 8.29px) * 1.4401));
   line-height: calc(1.0625rem + ((1vw - 3.29px) * 1.6202));
 
 }
@@ -119,8 +119,11 @@ a {
 
 @media (max-width: 1400px) {
   .bio-modal-overlay {
+    bottom: 0;
+    
     .bio-modal {
-      height: auto;
+      max-height: 100vh;
+      overflow-y: auto;
 
       .bio-content {
         align-items: center;

@@ -10,7 +10,7 @@
   .video-blok-iframe-content {
     height: 100%;
     width: 100%;
-    background-color: black;
+    // background-color: black;
     overflow: hidden;
   }
 
@@ -71,7 +71,7 @@
       line-height: calc(1.875rem + ((1vw - 3.29px) * 5.0283));
 
       font-weight: 700;
-        // line-height: 110px;
+      // line-height: 110px;
       animation: none;
       position: absolute;
       // line-height: 140px;
@@ -176,4 +176,6 @@
     //   }
     // }
   }
+
+
 }

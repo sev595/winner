@@ -27,22 +27,6 @@ a {
   text-decoration: none !important;
 }
 
-// /* Import Restora Font */
-// @font-face {
-//   font-family: 'Restora';
-//   src: url('./fonts/AkzidenzGroteskPro-Bold.eot') format('truetype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
-/* Import Akzidenz-Grotesk Pro Font */
-// @font-face {
-//   font-family: 'AkzidenzGroteskPro';
-//   src: url('./fonts/AkzidenzGroteskPro-Bold.woff') format('woff');
-//   font-weight: bold;
-//   font-style: normal;
-// }
-
 @font-face {
   font-family: "Akzidenz";
   src:
@@ -97,4 +81,10 @@ button{
 
   position: fixed;
   width: 100vw;
+}
+
+.App{
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }

@@ -1,5 +1,6 @@
 import "./videoBlok.scss"
 
+
 export const VideoBlok = () => {
   return (
     <section className="video-blok-container">

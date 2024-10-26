@@ -76,6 +76,10 @@
         align-items: center;
         height: auto;
 
+        .story-blok-info-content {
+          width: 100%;
+        }
+
         .story-blok-info {
           position: unset;
           height: auto !important;
